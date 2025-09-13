@@ -3,6 +3,13 @@ import { Globe } from "lucide-react";
 import heroImage from "@/assets/hero-bg.jpg";
 
 const HeroSection = () => {
+  const scrollToNextSection = () => {
+    window.scrollTo({
+      top: window.innerHeight,
+      behavior: 'smooth'
+    });
+  };
+
   return (
     <section className="relative min-h-screen flex items-center justify-center overflow-hidden">
       {/* Hero Background Image */}
@@ -39,8 +46,8 @@ const HeroSection = () => {
           </p>
           
           {/* CTA Button */}
-          <Button className="btn-hero" size="lg">
-            How It Works
+          <Button className="btn-hero" size="lg" onClick={scrollToNextSection}>
+            Learn More
           </Button>
         </div>
       </div>

@@ -43,7 +43,7 @@ const Footer = () => {
         
         {/* Bottom */}
         <div className="mt-8 pt-8 border-t border-beige-primary/30 text-center text-sm text-text-light">
-          <p>&copy; 2024 Hormone Vitality Coaching. All rights reserved.</p>
+          <p>&copy; {new Date().getFullYear()} Hormone Vitality Coaching. All rights reserved.</p>
         </div>
       </div>
     </footer>

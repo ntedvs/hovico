@@ -82,17 +82,12 @@ const ProcessSection = () => {
                     </div>
                   </div>
                   
-                  {/* Step Number Circle */}
+                  {/* Step Icon Circle */}
                   <div className="relative z-10 flex-shrink-0">
                     <div className="w-20 h-20 bg-primary rounded-full flex items-center justify-center shadow-lg">
                       <div className="w-16 h-16 bg-white rounded-full flex items-center justify-center">
                         <IconComponent className="w-8 h-8 text-primary" />
                       </div>
-                    </div>
-                    <div className="absolute -bottom-8 left-1/2 transform -translate-x-1/2">
-                      <span className="inline-flex items-center justify-center w-8 h-8 bg-primary text-white text-sm font-bold rounded-full">
-                        {step.number}
-                      </span>
                     </div>
                   </div>
                   

@@ -72,7 +72,11 @@ const PricingSection = () => {
           {plans.map((plan, index) => (
             <div 
               key={index} 
-              className={`relative card ${plan.popular ? 'ring-2 ring-primary shadow-xl' : ''}`}
+              className={`relative card flex flex-col transition-transform duration-300 hover:scale-105 ${
+                plan.popular 
+                  ? 'ring-2 ring-primary shadow-xl' 
+                  : 'ring-1 ring-gray-200'
+              }`}
             >
               {/* Popular Badge */}
               {plan.popular && (
@@ -108,7 +112,7 @@ const PricingSection = () => {
               
               {/* CTA Button */}
               <Button 
-                className={`w-full ${plan.popular ? 'btn-hero' : 'btn-beige'}`}
+                className={`w-full mt-auto ${plan.popular ? 'btn-hero' : 'btn-beige'}`}
                 size="lg"
               >
                 {plan.cta}
