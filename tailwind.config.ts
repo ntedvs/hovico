@@ -13,6 +13,10 @@ export default {
       },
     },
     extend: {
+      fontFamily: {
+        'serif': ['Playfair Display', 'serif'],
+        'body': ['Nunito', 'sans-serif'],
+      },
       colors: {
         border: "hsl(var(--border))",
         input: "hsl(var(--input))",
@@ -22,10 +26,12 @@ export default {
         primary: {
           DEFAULT: "hsl(var(--primary))",
           foreground: "hsl(var(--primary-foreground))",
+          green: "hsl(var(--primary-green))",
         },
         secondary: {
           DEFAULT: "hsl(var(--secondary))",
           foreground: "hsl(var(--secondary-foreground))",
+          green: "hsl(var(--secondary-green))",
         },
         destructive: {
           DEFAULT: "hsl(var(--destructive))",
@@ -56,6 +62,14 @@ export default {
           "accent-foreground": "hsl(var(--sidebar-accent-foreground))",
           border: "hsl(var(--sidebar-border))",
           ring: "hsl(var(--sidebar-ring))",
+        },
+        text: {
+          dark: "hsl(var(--text-dark))",
+          light: "hsl(var(--text-light))",
+        },
+        beige: {
+          primary: "hsl(var(--primary-beige))",
+          soft: "hsl(var(--soft-beige))",
         },
       },
       borderRadius: {

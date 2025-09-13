@@ -1,42 +1,47 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@400;500;600;700&family=Playfair+Display:wght@400;500;600;700&display=swap');
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
-/* Definition of the design system. All colors, gradients, fonts, etc should be defined here. 
-All colors MUST be HSL.
-*/
+/* Hormone Vitality Coaching Design System */
 
 @layer base {
   :root {
+    /* Brand Colors */
+    --primary-green: 83 20% 38%;        /* #586341 */
+    --secondary-green: 168 32% 19%;     /* #22433b */
+    --primary-beige: 33 37% 89%;        /* #f2e9dc */
+    --soft-beige: 38 33% 96%;           /* #f8f5f0 */
+    
+    /* Text Colors */
+    --text-dark: 0 0% 17%;              /* #2c2c2c */
+    --text-light: 0 0% 42%;             /* #6b6b6b */
+    
+    /* System Colors */
     --background: 0 0% 100%;
-    --foreground: 222.2 84% 4.9%;
-
+    --foreground: 0 0% 17%;
+    
     --card: 0 0% 100%;
-    --card-foreground: 222.2 84% 4.9%;
-
-    --popover: 0 0% 100%;
-    --popover-foreground: 222.2 84% 4.9%;
-
-    --primary: 222.2 47.4% 11.2%;
-    --primary-foreground: 210 40% 98%;
-
-    --secondary: 210 40% 96.1%;
-    --secondary-foreground: 222.2 47.4% 11.2%;
-
-    --muted: 210 40% 96.1%;
-    --muted-foreground: 215.4 16.3% 46.9%;
-
-    --accent: 210 40% 96.1%;
-    --accent-foreground: 222.2 47.4% 11.2%;
-
-    --destructive: 0 84.2% 60.2%;
-    --destructive-foreground: 210 40% 98%;
-
-    --border: 214.3 31.8% 91.4%;
-    --input: 214.3 31.8% 91.4%;
-    --ring: 222.2 84% 4.9%;
-
-    --radius: 0.5rem;
+    --card-foreground: 0 0% 17%;
+    
+    --primary: 83 20% 38%;
+    --primary-foreground: 0 0% 100%;
+    
+    --secondary: 38 33% 96%;
+    --secondary-foreground: 0 0% 17%;
+    
+    --muted: 33 37% 89%;
+    --muted-foreground: 0 0% 42%;
+    
+    --accent: 168 32% 19%;
+    --accent-foreground: 0 0% 100%;
+    
+    --border: 33 37% 89%;
+    --input: 33 37% 89%;
+    --ring: 83 20% 38%;
+    
+    --radius: 0.625rem; /* 10px - rounded-soft */
 
     --sidebar-background: 0 0% 98%;
 
@@ -100,6 +105,77 @@ All colors MUST be HSL.
   }
 
   body {
-    @apply bg-background text-foreground;
+    @apply bg-background text-foreground font-body;
+  }
+  
+  h1, h2, h3, h4, h5, h6 {
+    @apply font-serif;
+  }
+}
+
+@layer components {
+  /* Custom utility classes */
+  .container-custom {
+    @apply max-w-7xl mx-auto px-6 lg:px-8;
+  }
+  
+  .section-padding {
+    @apply py-16 lg:py-24;
+  }
+  
+  .rounded-soft {
+    border-radius: var(--radius);
+  }
+  
+  .card {
+    @apply bg-card text-card-foreground rounded-soft p-8 shadow-sm;
+  }
+  
+  /* Typography classes */
+  .heading-xl {
+    @apply text-4xl lg:text-6xl font-bold text-foreground;
+  }
+  
+  .heading-lg {
+    @apply text-3xl lg:text-4xl font-bold text-foreground;
+  }
+  
+  .heading-md {
+    @apply text-2xl lg:text-3xl font-semibold text-foreground;
+  }
+  
+  .body-text {
+    @apply text-base lg:text-lg leading-relaxed text-muted-foreground;
+  }
+  
+  /* Button variants */
+  .btn-hero {
+    @apply bg-primary text-primary-foreground hover:bg-primary/90 px-8 py-4 text-lg font-medium rounded-soft transition-colors;
+  }
+  
+  .btn-secondary-white {
+    @apply bg-white text-primary border-2 border-white hover:bg-primary hover:text-white px-8 py-4 text-lg font-medium rounded-soft transition-colors;
+  }
+  
+  .btn-beige {
+    @apply bg-secondary text-secondary-foreground hover:bg-secondary/80 px-6 py-3 font-medium rounded-soft transition-colors;
+  }
+  
+  /* Background tints */
+  .bg-light-green {
+    background-color: hsl(var(--primary-green) / 0.05);
+  }
+  
+  .bg-soft-beige {
+    background-color: hsl(var(--soft-beige));
+  }
+  
+  .bg-primary-beige {
+    background-color: hsl(var(--primary-beige));
+  }
+  
+  /* Decorative elements */
+  .accent-graphic {
+    @apply absolute pointer-events-none opacity-20;
   }
 }
