@@ -18,8 +18,8 @@ const steps = [
     number: 2,
     icon: FileText,
     title: "Share & Track",
-    description: "Complete a comprehensive health assessment and track your one-week food and health diary.",
-    detail: "This gives us valuable insights into your current patterns and symptoms."
+    description: "Share your problems list and complete a one-week food and health diary.",
+    detail: "This gives us valuable insights into your current patterns and specific health challenges."
   },
   {
     number: 3,
@@ -31,16 +31,16 @@ const steps = [
   {
     number: 4,
     icon: BarChart,
-    title: "Weekly Progress & Plans",
-    description: "Receive weekly questionnaires and completely personalized health plans.",
-    detail: "Every recommendation is specifically designed for your body and lifestyle."
+    title: "Weekly Cycle & Personalized Plans",
+    description: "Complete weekly questionnaires, which the coach reviews to create your personalized weekly plans.",
+    detail: "Coach researches your responses and creates customized plans specifically for your needs."
   },
   {
     number: 5,
     icon: MessageCircle,
-    title: "Ongoing Support",
+    title: "Ongoing Support & Open Communication",
     description: "Enjoy continuous communication and support throughout your transformation journey.",
-    detail: "Direct access to Kim for questions, adjustments, and celebration of wins."
+    detail: "Direct access to Kim for questions, adjustments, and celebration of your progress."
   }
 ];
 

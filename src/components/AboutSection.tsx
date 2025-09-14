@@ -25,37 +25,15 @@ const AboutSection = () => {
             
             <div className="space-y-4 text-lg leading-relaxed">
               <p className="text-text-dark">
-                <strong>Certified Health Coach & Hormonal Coach</strong> specializing in 
+                <strong>Certified Health Coach & Hormonal Coach</strong> specializing in
                 women's hormonal wellness, PCOS management, and PMS relief.
               </p>
-              
+
               <p className="text-text-light">
-                With years of experience in holistic health coaching, Kim takes a unique 
-                <strong className="text-primary"> 3D holistic approach</strong> that goes beyond 
-                traditional 2D methods. This comprehensive method addresses not just nutrition, 
-                but the interconnected aspects of stress, lifestyle, and hormonal health.
-              </p>
-              
-              <p className="text-text-light">
-                Kim's passion lies in empowering women to reclaim their vitality through 
-                personalized, evidence-based strategies that honor the complex nature of 
-                women's health and hormonal cycles.
+                Kim takes a unique <strong className="text-primary">3D holistic approach</strong> that goes beyond traditional methods, addressing the interconnected aspects of mental health, diet, and lifestyle balance as a complete system.
               </p>
             </div>
             
-            {/* Credentials */}
-            <div className="mt-8 p-6 bg-beige-soft rounded-soft">
-              <h3 className="font-serif text-xl font-semibold mb-3 text-text-dark">
-                Specializations
-              </h3>
-              <ul className="space-y-2 text-text-light">
-                <li>• PCOS Management & Support</li>
-                <li>• PMS & Menstrual Health</li>
-                <li>• Hormonal Balance Optimization</li>
-                <li>• Stress & Anxiety Management</li>
-                <li>• Nutrition for Hormonal Health</li>
-              </ul>
-            </div>
           </div>
         </div>
       </div>

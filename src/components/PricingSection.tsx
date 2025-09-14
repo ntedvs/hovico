@@ -18,29 +18,29 @@ const plans = [
   },
   {
     name: "One-Month Program",
-    price: "$297",
+    price: "€480",
     duration: "4 weeks",
     description: "Intensive support to kickstart your transformation",
     features: [
       "Weekly 1-on-1 coaching sessions",
-      "Personalized nutrition plans",
-      "Custom exercise recommendations",
+      "Weekly questionnaires for personalized insights",
+      "Customized weekly plans created by coach",
+      "Food & health diary review and guidance",
       "Direct coach access via messaging",
-      "Weekly progress assessments",
-      "Supplement guidance"
+      "Personalized nutrition and exercise recommendations"
     ],
     cta: "Start Transformation",
     popular: true
   },
   {
     name: "Six-Month Program",
-    price: "$1,497",
+    price: "€820",
     duration: "6 months",
     description: "Complete transformation with ongoing support",
     features: [
       "Everything in One-Month Program",
       "Extended coaching relationship",
-      "Exclusive educational PDFs",
+      "Original PDFs with health/wellness information written by coach",
       "Meal planning templates",
       "Recipe collections",
       "Lifestyle optimization guides",

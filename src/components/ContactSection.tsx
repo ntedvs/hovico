@@ -13,16 +13,24 @@ const faqs = [
     answer: "Simply book your free Getting-to-Know-You meeting where we'll discuss your health challenges and goals. This 30-minute consultation helps us understand if our approach is right for you, with no pressure or commitment required."
   },
   {
+    question: "What makes your 3D approach different from traditional methods?",
+    answer: "Unlike personal trainers or nutritionists who focus on just one life attribute (a flat 2D approach), our 3D holistic method addresses the interconnected aspects of mental health, diet, and lifestyle balance. Everything works together as a complete system for deep, lasting transformation."
+  },
+  {
+    question: "What's the weekly process like in your programs?",
+    answer: "Each week you'll complete a questionnaire which I review and research to create your personalized weekly plans. We'll then have a check-in session to discuss your progress. This cycle ensures every recommendation is specifically tailored to your body and lifestyle."
+  },
+  {
     question: "Are all sessions conducted online?",
     answer: "Yes, all coaching sessions are conducted via secure video calls, allowing you to receive support from the comfort of your home. This also enables us to serve clients globally while maintaining the personal connection essential for effective coaching."
   },
   {
-    question: "What's included in the coaching programs?",
-    answer: "Both programs include weekly 1-on-1 sessions, personalized nutrition and lifestyle plans, direct coach access for questions, and ongoing progress monitoring. The 6-month program also includes exclusive educational resources, meal planning templates, and extended support."
-  },
-  {
     question: "Do you really offer services in both English and Dutch?",
     answer: "Absolutely! Kim is fluent in both English and Dutch, allowing her to provide comfortable, culturally-appropriate coaching in your preferred language. This ensures clear communication and deeper understanding of your unique health journey."
+  },
+  {
+    question: "What's the difference between the 1-month and 6-month programs?",
+    answer: "Both programs include weekly coaching sessions, personalized plans, and direct coach access. The 6-month program additionally includes original PDFs with health and wellness information written by the coach, plus extended support for long-term habit formation and sustained transformation."
   }
 ];
 
