@@ -59,16 +59,14 @@ const ProcessSection = () => {
           </p>
         </div>
         
-        {/* Process Timeline */}
+        {/* Process Steps */}
         <div className="relative">
-          {/* Connection Line */}
-          <div className="hidden lg:block absolute top-24 left-1/2 transform -translate-x-1/2 w-0.5 h-full bg-primary/20"></div>
           
           <div className="space-y-12 lg:space-y-16">
             {steps.map((step, index) => {
               const IconComponent = step.icon;
               const isEven = index % 2 === 0;
-              
+
               return (
                 <div key={index} className={`relative flex items-center ${
                   isEven ? 'lg:flex-row' : 'lg:flex-row-reverse'
@@ -81,7 +79,7 @@ const ProcessSection = () => {
                       <p className="text-text-light text-sm">{step.detail}</p>
                     </div>
                   </div>
-                  
+
                   {/* Step Icon Circle */}
                   <div className="relative z-10 flex-shrink-0">
                     <div className="w-20 h-20 bg-primary rounded-full flex items-center justify-center shadow-lg">
@@ -90,7 +88,7 @@ const ProcessSection = () => {
                       </div>
                     </div>
                   </div>
-                  
+
                   {/* Empty space for alignment */}
                   <div className="flex-1 lg:max-w-md lg:block hidden"></div>
                 </div>

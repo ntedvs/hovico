@@ -27,22 +27,6 @@ const TestimonialSection = () => {
               <cite className="text-lg text-text-light font-medium">— Sarah M.</cite>
             </footer>
           </blockquote>
-          
-          {/* Stats */}
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mt-12">
-            <div className="text-center">
-              <div className="text-4xl font-serif font-bold text-primary mb-2">200+</div>
-              <div className="text-text-light">Women Transformed</div>
-            </div>
-            <div className="text-center">
-              <div className="text-4xl font-serif font-bold text-primary mb-2">95%</div>
-              <div className="text-text-light">Report Improved Symptoms</div>
-            </div>
-            <div className="text-center">
-              <div className="text-4xl font-serif font-bold text-primary mb-2">5★</div>
-              <div className="text-text-light">Average Client Rating</div>
-            </div>
-          </div>
         </div>
       </div>
     </section>

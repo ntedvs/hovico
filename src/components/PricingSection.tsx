@@ -53,6 +53,13 @@ const plans = [
 ];
 
 const PricingSection = () => {
+  const scrollToContact = () => {
+    const contactSection = document.getElementById('contact-section');
+    if (contactSection) {
+      contactSection.scrollIntoView({ behavior: 'smooth' });
+    }
+  };
+
   return (
     <section className="section-padding bg-white">
       <div className="container-custom">
@@ -111,9 +118,10 @@ const PricingSection = () => {
               </ul>
               
               {/* CTA Button */}
-              <Button 
+              <Button
                 className={`w-full mt-auto ${plan.popular ? 'btn-hero' : 'btn-beige'}`}
                 size="lg"
+                onClick={scrollToContact}
               >
                 {plan.cta}
               </Button>

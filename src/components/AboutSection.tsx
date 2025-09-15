@@ -1,18 +1,37 @@
-import kimImage from "@/assets/kim-headshot.jpg";
+import kimHeadshot from "@/assets/kim-headshot.jpg";
+import kimGym from "@/assets/kim-gym.jpg";
+import kimWork from "@/assets/kim-work.jpg";
+import { Carousel, CarouselContent, CarouselItem, CarouselNext, CarouselPrevious } from "@/components/ui/carousel";
 
 const AboutSection = () => {
+  const images = [
+    { src: kimHeadshot, alt: "Kim Van Nieuwenhove - Certified Health & Hormonal Coach" },
+    { src: kimGym, alt: "Kim Van Nieuwenhove - Fitness Training" },
+    { src: kimWork, alt: "Kim Van Nieuwenhove - Health Consultation" }
+  ];
+
   return (
     <section className="section-padding bg-white">
       <div className="container-custom">
         <div className="grid lg:grid-cols-2 gap-12 items-center">
-          {/* Image */}
+          {/* Image Carousel */}
           <div className="order-2 lg:order-1">
             <div className="relative">
-              <img
-                src={kimImage}
-                alt="Kim Van Nieuwenhove - Certified Health & Hormonal Coach"
-                className="w-full max-w-lg mx-auto rounded-soft shadow-lg"
-              />
+              <Carousel className="w-full max-w-lg mx-auto">
+                <CarouselContent>
+                  {images.map((image, index) => (
+                    <CarouselItem key={index}>
+                      <img
+                        src={image.src}
+                        alt={image.alt}
+                        className="w-full rounded-soft shadow-lg"
+                      />
+                    </CarouselItem>
+                  ))}
+                </CarouselContent>
+                <CarouselPrevious className="left-4 bg-white/90 hover:bg-white border-primary/20 hover:border-primary" />
+                <CarouselNext className="right-4 bg-white/90 hover:bg-white border-primary/20 hover:border-primary" />
+              </Carousel>
               <div className="accent-graphic -bottom-4 -right-4 w-20 h-20 bg-primary/10 rounded-full"></div>
             </div>
           </div>

@@ -38,7 +38,7 @@ const ContactSection = () => {
   const [openFaq, setOpenFaq] = useState<number | null>(null);
 
   return (
-    <section className="section-padding bg-beige-soft">
+    <section id="contact-section" className="section-padding bg-beige-soft">
       <div className="container-custom">
         <div className="grid lg:grid-cols-2 gap-16">
           {/* Contact Information */}

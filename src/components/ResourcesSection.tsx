@@ -3,13 +3,13 @@ import { Download, FileText } from "lucide-react";
 
 const resources = [
   {
-    title: "Hormone Balance Starter Guide",
+    title: "Hormone Balance Guide",
     description: "Essential foundations for understanding and optimizing your hormonal health naturally.",
     icon: FileText,
     downloadLabel: "Download Now"
   },
   {
-    title: "3D Wellness Transformation Workbook",
+    title: "Transformation Workbook",
     description: "A comprehensive workbook to implement our holistic approach in your daily life.",
     icon: FileText,
     downloadLabel: "Download Now"
