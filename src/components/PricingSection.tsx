@@ -3,51 +3,67 @@ import { Check, Star } from "lucide-react";
 
 const plans = [
   {
-    name: "Getting-to-Know-You Meeting",
+    name: "Free Consultation",
     price: "Free",
     duration: "30 minutes",
-    description: "Start your journey with a no-pressure consultation",
+    description: "Getting to know you meeting - start your health journey",
     features: [
+      "Ask questions about different programs",
       "Share your health challenges & goals",
-      "Learn about our approach",
-      "Receive initial guidance",
+      "Learn about our holistic approach",
+      "Meet your coach and understand what to expect",
       "No commitment required"
     ],
     cta: "Book Free Meeting",
     popular: false
   },
   {
-    name: "One-Month Program",
-    price: "€480",
-    duration: "4 weeks",
-    description: "Intensive support to kickstart your transformation",
+    name: "One-on-One Coaching",
+    price: "€120",
+    duration: "Single session",
+    description: "Perfect for self-motivated individuals ready to start",
     features: [
-      "Weekly 1-on-1 coaching sessions",
-      "Weekly questionnaires for personalized insights",
-      "Customized weekly plans created by coach",
-      "Food & health diary review and guidance",
-      "Direct coach access via messaging",
-      "Personalized nutrition and exercise recommendations"
+      "60-minute comprehensive intake session",
+      "Hormonal balance questionnaires & analysis",
+      "One-week food and health diary review",
+      "Personal advice on nutrition, sleep & exercise",
+      "Stress management guidance",
+      "Customized health plan to follow independently"
     ],
-    cta: "Start Transformation",
+    cta: "Start Your Journey",
+    popular: false
+  },
+  {
+    name: "3-Month Coaching Program",
+    price: "€270",
+    duration: "3 months",
+    description: "Comprehensive support with ongoing guidance",
+    features: [
+      "Everything from one-on-one coaching session",
+      "Detailed follow-up meeting with action plan",
+      "3 months of support via email and WhatsApp",
+      "Access to exclusive recipes and e-books",
+      "Hormonal health and vitality resources",
+      "Regular check-ins and plan adjustments"
+    ],
+    cta: "Begin Transformation",
     popular: true
   },
   {
-    name: "Six-Month Program",
-    price: "€820",
+    name: "6-Month Coaching Program",
+    price: "€490",
     duration: "6 months",
-    description: "Complete transformation with ongoing support",
+    description: "Complete transformation with extended support",
     features: [
-      "Everything in One-Month Program",
-      "Extended coaching relationship",
-      "Original PDFs with health/wellness information written by coach",
-      "Meal planning templates",
-      "Recipe collections",
-      "Lifestyle optimization guides",
-      "Long-term habit formation",
-      "Sustained support system"
+      "Everything from 3-month program",
+      "4 live coaching sessions (60 minutes each)",
+      "6 months of continuous support via email/WhatsApp",
+      "Access to all e-books written by the coach",
+      "Comprehensive resource library",
+      "Long-term habit formation support",
+      "Sustained accountability partnership"
     ],
-    cta: "Begin Journey",
+    cta: "Commit to Wellness",
     popular: false
   }
 ];
@@ -69,13 +85,15 @@ const PricingSection = () => {
             Choose Your Path to Wellness
           </h2>
           <p className="body-text max-w-2xl mx-auto">
-            Flexible programs designed to meet you where you are in your health journey. 
-            Every option includes personalized support tailored to your unique needs.
+            My holistic approach recognizes that everything works together: mental health, diet,
+            lifestyle balance, and hormonal balance. The goal isn't just weight loss or stress
+            reduction in isolation, but overall health balance and wellbeing so your body can heal.
+            I provide support, accountability, and personalized strategies - we're in this together!
           </p>
         </div>
         
         {/* Pricing Cards */}
-        <div className="grid lg:grid-cols-3 gap-8 max-w-6xl mx-auto">
+        <div className="grid lg:grid-cols-2 gap-8 max-w-5xl mx-auto">
           {plans.map((plan, index) => (
             <div 
               key={index} 
